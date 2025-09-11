@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Victor Olumide - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website showcasing the work and skills of Victor Olumide, a Junior Software Developer and Graphic Designer. Built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Modern UI**: Clean, professional design with smooth animations
+- **Project Showcase**: Interactive display of mini-projects built with JavaScript and React
+- **Skills Section**: Comprehensive overview of technical and soft skills
+- **Contact Integration**: Direct contact form and social media links
+- **Resume Download**: Easy access to download my resume
+- **SEO Optimized**: Built with Next.js for optimal performance and SEO
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **Language**: JavaScript (ES6+)
+- **Icons**: React Icons
+- **Deployment**: Vercel
+
+## 📁 Project Structure
+
+```
+├── src/
+│   ├── app/
+│   │   ├── page.jsx          # Homepage
+│   │   ├── about/page.jsx    # About page
+│   │   ├── contact/page.jsx  # Contact page
+│   │   ├── projects/page.jsx # Projects showcase
+│   │   ├── components/       # Reusable components
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── ProjectCard.jsx
+│   │   │   └── ...
+│   │   └── layout.jsx        # Root layout
+│   └── globals.css           # Global styles
+├── public/                   # Static assets
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+
+- npm or yarn
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+```bash
+git clone https://github.com/Victor-Olumide/portfolio.git
+cd portfolio
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run the development server:
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🌟 Featured Projects
+
+### JavaScript Projects
+- Digital Clock
+- Countdown Timer
+- Roman Numeral Converter
+- Simple Calculator
+- Todo List Application
+
+### React Projects
+- Password Generator
+- Quiz App
+- Tic Tac Toe Game
+- Character Counter
+- BMI Calculator
+
+## 📞 Contact
+
+- **Email**: oyewumivictor7@gmail.com
+- **LinkedIn**: [Victor Olumide](https://linkedin.com/in/victor-olumide)
+- **GitHub**: [Victor-Olumide](https://github.com/Victor-Olumide)
+
+## 🎨 Design & Development
+
+This portfolio combines modern web development practices with clean design principles. The site features:
+
+- Mobile-first responsive design
+- Smooth hover effects and transitions
+- Professional typography using Geist font
+- Optimized images and assets
+- Fast loading times with Next.js optimization
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with ❤️ by Victor Olumide**
