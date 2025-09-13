@@ -18,8 +18,8 @@ export default function Footer() {
                 <h2>Sitemap</h2>
               </div>
               <GroupLink title="Home" link="/" />
-              <GroupLink title="Projects" link="/projects" />
               <GroupLink title="About" link="/about" />
+              <GroupLink title="Projects" link="/projects" />
               <GroupLink title="contact" link="/contact" />
             </ul>
           </div>
@@ -30,8 +30,8 @@ export default function Footer() {
                 <h2>Socials</h2>
               </div>
               <GroupLink title="Facebook" link="https://www.facebook.com/share/19vz7JKxo9/" />
-              <GroupLink title="Thread" link="https://www.threads.com/@official_victor_olumide" />
-              <GroupLink title="Instagram" link="https://instagram.com/official _victor_olumide" />
+              <GroupLink title="Threads" link="https://www.threads.com/@official_victor_olumide" />
+              <GroupLink title="Instagram" link="https://instagram.com/official_victor_olumide" />
               <GroupLink title="LinkedIn" link="https://linkedin.com/in/victor-olumide" />
             </ul>
           </div>

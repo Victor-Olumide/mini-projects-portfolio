@@ -8,7 +8,7 @@ export default function GroupLink({ title, link }) {
 
   return (
     <li>
-      <Link href={link} className={pathname === link ? "text-red-600 font-bold" : ""}>{title}</Link>
+      <Link href={link} className={pathname === link ? "text-red-600 font-bold" : "hover:text-red-600"}>{title}</Link>
     </li>
   );
 }
