@@ -25,19 +25,33 @@ A modern, responsive portfolio website showcasing the work and skills of Victor 
 ```
 ├── src/
 │   ├── app/
-│   │   ├── page.jsx          # Homepage
-│   │   ├── about/page.jsx    # About page
-│   │   ├── contact/page.jsx  # Contact page
-│   │   ├── projects/page.jsx # Projects showcase
-│   │   ├── components/       # Reusable components
-│   │   │   ├── Navbar.jsx
+│   │   ├── page.jsx              # Homepage
+│   │   ├── about/page.jsx        # About page
+│   │   ├── contact/page.jsx      # Contact page
+│   │   ├── projects/page.jsx     # Projects showcase
+│   │   ├── components/           # Reusable components
+│   │   │   ├── DesktopNavbar.jsx
 │   │   │   ├── Footer.jsx
-│   │   │   ├── ProjectCard.jsx
-│   │   │   └── ...
-│   │   └── layout.jsx        # Root layout
-│   └── globals.css           # Global styles
-├── public/                   # Static assets
-└── package.json
+│   │   │   ├── GroupLink.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── HomeCard.jsx
+│   │   │   ├── Items.jsx
+│   │   │   ├── MobileNavbar.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   └── ProjectCard.jsx
+│   │   ├── elements.js
+│   │   ├── favicon.ico
+│   │   ├── layout.jsx            # Root layout
+│   │   └── globals.css           # Global styles
+├── public/                       # Static assets (images, resume, etc.)
+├── .gitignore
+├── eslint.config.mjs
+├── jsconfig.json
+├── next.config.js
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+└── README.md
 ```
 
 ## 🚀 Getting Started
