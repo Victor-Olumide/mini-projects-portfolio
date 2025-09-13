@@ -12,6 +12,7 @@ export default function HomeCard({src,name, title, desc}) {
           width={400}
           height={700}
           className="scale-x-[-1] md:rounded-r-2xl md:rounded-t-none rounded-t-2xl  bg-blend-lighten"
+          loading={"lazy"}
         />
 
         <div className="p-10 text-black">

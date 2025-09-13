@@ -12,6 +12,7 @@ export default function ProjectCard({ src, title, desc, githubLink, hostedLink }
           height={450}
           width={800}
           className="cursor-pointer hover:scale-110 transition-all"
+          loading={"lazy"}
         />
       <h2 className="font-semibold">{title}</h2>
       <p>{desc}</p>

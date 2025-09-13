@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="m-10">
       <div className="flex gap-10 justify-evenly">
         <div className="text-3xl font-bold md:w-1/2">
-          <Image src="/logo.png" alt="VO logo" width={100} height={100}/>
+          <Image src="/logo.png" alt="VO logo" width={100} height={100}  loading={"lazy"}/>
         </div>
 
         <div className="flex gap-5 md:gap-50">

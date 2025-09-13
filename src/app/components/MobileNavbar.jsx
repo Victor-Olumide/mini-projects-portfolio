@@ -26,7 +26,7 @@ export default function MobileNavbar() {
 
       {showNav && (
         <ul
-          className="md:hidden flex flex-col justify-start items-start fixed -z-[-1] bg-fixed text-white bg-[#182239] px-8 py-5 gap-4 h-screen w-4/5 border-r-2  "
+          className="md:hidden flex flex-col justify-start items-start fixed -z-[-1] bg-fixed text-white bg-[#182239] px-8 py-5 gap-4 h-screen w-4/5 border-r-2 border-white/30 "
           onClick={handleMobileNavigation}
         >
           {mobile}
