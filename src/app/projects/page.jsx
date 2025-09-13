@@ -81,7 +81,7 @@ export default function Projects() {
 
   return (
     <main className="p-4 flex flex-col justify-center items-center">
-      <section className="text-center">
+      <section className="text-center mt-[52px]">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Explore My Professionally Curated Creative Projects</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Dive into a collection of my mini-projects built with JavaScript and React. Each project showcases different skills and concepts, from simple utilities to interactive game.

@@ -24,7 +24,7 @@ export default function Contact() {
         <form
           action="mailto:oyewumivictor7@gmail.com"
           method="post"
-          enctype="text/plain"
+          encType="text/plain"
           className="max-w-md mx-auto mb-8"
         >
           <input type="hidden" name="subject" value="Contact Form Submission" />

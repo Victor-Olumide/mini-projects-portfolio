@@ -5,47 +5,16 @@ import ProjectCard from "./components/ProjectCard";
 import { FaHtml5, FaReact, FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { SiTailwindcss } from "react-icons/si";
+import Header from "./components/Header";
+import HomeCard from "./components/HomeCard";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center w-full min-h-screen p-8">
-      <div className="flex flex-col md:flex-row justify-evenly items-center mt-8 bg-white max-w-6xl rounded-2xl shadow-lg">
-        <Image
-          src="/me.jpg"
-          alt="victor Olumide"
-          width={400}
-          height={700}
-          className="scale-x-[-1] md:rounded-r-2xl md:rounded-t-none rounded-t-2xl  bg-blend-lighten"
-        />
+    <>
+      <Header src="/logo.png" message={"welcome to my mini projects portfolio"}/>
 
-        <div className="p-10 text-black">
-          <h1 className="text-3xl md:text-3xl lg:text-6xl font-bold">Oyewumi Victor Olumide</h1>
-          <h2 className="text-xl md:text-xl lg:text-3xl font-semibold mt-4">
-            Junior Software Developer, Graphic Designer
-          </h2>
-          <p className="text-sm md:text-sm lg:text-xl font-medium mt-4">
-            I am a passionate and dedicated junior software developer with a
-            knack for creating efficient and scalable web applications. With a
-            foundation in both front-end and back-end technologies, I thrive in
-            collaborative environments where I can contribute to innovative
-            projects. My goal is to continuously learn and grow as a developer
-            while delivering high-quality solutions that meet user needs.
-          </p>
-
-          <div className="flex flex-row md:flex-col items-start mt-6">
-            <Link href="/projects">
-              <button className="bg-gray-800 hover:bg-gray-700 md:w-[200px] flex-1 p-2 text-white">
-                View My Projects
-              </button>
-            </Link>
-            <a href="/victor_olumide_resume.pdf" download>
-              <button className="border md:w-[200px] border-amber-500 hover:border-gray-800 flex-1 p-2">
-                Download Resume
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
+    <main className="flex flex-col items-center justify-center w-full min-h-screen p-4 md:p-8">
+      <HomeCard src="/me.jpg" title={"Junior Software Developer, Graphic Designer"} name={"Oyewumi Victor Olumide"} desc={" I am a passionate and dedicated junior software developer with a knack for creating efficient and scalable web applications. With a foundation in both front-end and back-end technologies, I thrive in collaborative environments where I can contribute to innovative projects. My goal is to continuously learn and grow as a developer while delivering high-quality solutions that meet user needs."} />
 
       <section className="mt-16 w-full max-w-6xl">
         <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Featured Projects</h2>
@@ -88,19 +57,23 @@ export default function Home() {
             <FaHtml5 className="text-orange-500 text-4xl mb-2" />
             <span className="text-sm font-medium">HTML</span>
           </div>
+
           <div className="flex flex-col items-center">
             <SiTailwindcss className="text-blue-500 text-4xl mb-2" />
             <span className="text-sm font-medium">Tailwind CSS</span>
           </div>
+
           <div className="flex flex-col items-center">
             <AiOutlineJavaScript className="text-yellow-500 text-4xl mb-2" />
             <span className="text-sm font-medium">JavaScript</span>
           </div>
+
           <div className="flex flex-col items-center">
             <FaReact className="text-blue-400 text-4xl mb-2" />
             <span className="text-sm font-medium">React</span>
           </div>
         </div>
+
         <div className="mt-6">
           <Link href="/about">
             <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg">
@@ -112,21 +85,23 @@ export default function Home() {
 
       <section className="mt-16 w-full max-w-4xl text-center">
         <h2 className="text-3xl font-bold mb-8 text-gray-800">Connect With Me</h2>
+
         <div className="flex justify-center gap-8">
-          <a href="https://linkedin.com/in/victor-olumide" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
-            <FaLinkedin size={40} />
+          <a href="https://linkedin.com/in/victor-olumide" target="_blank" rel="noopener noreferrer" >
+            <FaLinkedin size={40} className="text-blue-600 hover:text-blue-800 transition-colors"/>
           </a>
-          <a href="https://github.com/Victor-Olumide" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-600 transition-colors">
-            <FaGithub size={40} />
+          <a href="https://github.com/Victor-Olumide" target="_blank" rel="noopener noreferrer" >
+            <FaGithub size={40} className="text-gray-800 hover:text-gray-600 transition-colors"/>
           </a>
-          <a href="https://www.facebook.com/share/19vz7JKxo9/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition-colors">
-            <FaFacebook size={40} />
+          <a href="https://www.facebook.com/share/19vz7JKxo9/" target="_blank" rel="noopener noreferrer" >
+            <FaFacebook size={40} className="text-blue-700 hover:text-blue-900 transition-colors"/>
           </a>
-          <a href="https://instagram.com/official _victor_olumide" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 transition-colors">
-            <FaInstagram size={40} />
+          <a href="https://instagram.com/official_victor_olumide" target="_blank" rel="noopener noreferrer" >
+            <FaInstagram size={40} className=" text-pink-600 hover:text-pink-800 transition-colors" />
           </a>
         </div>
       </section>
     </main>
+    </>
   );
 }

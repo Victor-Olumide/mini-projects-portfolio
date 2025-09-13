@@ -25,11 +25,12 @@ import {
 } from "react-icons/si";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { VscVscode } from "react-icons/vsc";
+import Items from "../components/Items";
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 bg-[#182239] w-full rounded-b-3xl p-10 text-white border-t border-t-white/30">
+    <main className="min-h-screen relative  w-full bg-gray-50">
+      <div className="flex flex-col md:flex-row mt-[52px] justify-center items-center  gap-10 bg-[#182239] w-full rounded-b-3xl p-10 text-white border-t border-t-white/30">
         <Image
           src="/profile.jpg"
           alt="profile picture"
@@ -176,82 +177,51 @@ export default function About() {
           Experience
         </h2>
         <div className="space-y-8">
-          <div className="border-l-4 border-indigo-500 pl-6">
-            <h3 className="text-xl font-semibold">
-              Software Developer (Frontend & Backend)
-            </h3>
-            <p className="text-gray-600 mb-2">
-              Univelcity | June 2025 - Present
-            </p>
-            <p className="text-gray-700">
-              Developing full-stack applications using JavaScript, React, and
-              Tailwind CSS, with a focus on both frontend and backend
-              technologies, contributing to innovative projects and enhancing
-              user experiences.
-            </p>
-          </div>
+          <Items
+            title="Software Developer (Frontend & Backend)"
+            date="Univelcity | June 2025 - Present"
+            description="Developing full-stack applications using JavaScript, React, and Tailwind CSS, with a focus on both frontend and backend technologies, contributing to innovative projects and enhancing user experiences."
+          />
 
-          <div className="border-l-4 border-blue-500 pl-6">
-            <h3 className="text-xl font-semibold">Haven360 Labs Intern</h3>
-            <p className="text-gray-600 mb-2">June 2024 - September 2024</p>
-            <p className="text-gray-700">
-              Worked on writing APIs for Smartparrot AI using Golang for backend
-              development, an AI tool for managing and scheduling social media.
-              Also replicated Figma designs for social media email post
-              notifications using HTML and CSS.
-            </p>
-          </div>
+          <Items
+            title="Haven360 Labs Intern"
+            date="June 2024 - September 2024"
+            description="Worked on writing APIs for Smartparrot AI using Golang for backend development, an AI tool for managing and scheduling social media. Also replicated Figma designs for social media email post notifications using HTML and CSS."
+          />
 
-          <div className="border-l-4 border-purple-500 pl-6">
-            <h3 className="text-xl font-semibold">Graphic Designer</h3>
-            <p className="text-gray-600 mb-2">Self-Taught | 2020 - Present</p>
-            <p className="text-gray-700">
-              Created visually appealing and effective design solutions,
-              including logos, social media graphics, and event banner designs.
-            </p>
-          </div>
+          <Items
+            title="Graphic Designer"
+            date="Self-Taught | 2020 - Present"
+            description="Created visually appealing and effective design solutions, including logos, social media graphics, and event banner designs."
+          />
 
-          <div className="border-l-4 border-orange-500 pl-6">
-            <h3 className="text-xl font-semibold">C++ Programming Intern</h3>
-            <p className="text-gray-600 mb-2">
-              Ceped Institute of Information and Technology | June 2023 -
-              September 2023
-            </p>
-            <p className="text-gray-700">
-              Participated in a C++ programming internship class, gaining
-              hands-on experience in C++ development.
-            </p>
-          </div>
+          <Items
+            title="C++ Programming Intern"
+            date="Ceped Institute of Information and Technology | June 2023 - September 2023"
+            description="Participated in a C++ programming internship class, gaining hands-on experience in C++ development."
+          />
 
-          <div className="border-l-4 border-red-500 pl-6">
-            <h3 className="text-xl font-semibold">Tech Event Participant</h3>
-            <p className="text-gray-600 mb-2">IEEE ABUAD | 2023</p>
-            <p className="text-gray-700">
-              Participated in a tech event organized by the Institute of
-              Electrical Electronics Engineers (IEEE) ABUAD, where I gained
-              experience in building a DC motor from scratch using Arduino IDE.
-            </p>
-          </div>
+          <Items
+            title="Tech Event Participant"
+            date="IEEE ABUAD | 2023"
+            description="Participated in a tech event organized by the Institute of Electrical Electronics Engineers (IEEE) ABUAD, where I gained experience in building a DC motor from scratch using Arduino IDE."
+          />
         </div>
       </section>
 
       <section className="py-10 px-4 max-w-6xl mt-10 mx-auto bg-white rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Education</h2>
         <div className="space-y-8">
-          <div className="border-l-4 border-indigo-500 pl-6">
-            <h3 className="text-xl font-semibold">Bachelor of Engineering in Computer Engineering</h3>
-            <p className="text-gray-600 mb-2">Afe Babalola University Ado-Ekiti | Expected Graduation: 2027</p>
-            <p className="text-gray-700">
-              Studying computer engineering with a focus on software development, algorithms, and system design.
-            </p>
-          </div>
-          <div className="border-l-4 border-indigo-500 pl-6">
-            <h3 className="text-xl font-semibold">High School</h3>
-            <p className="text-gray-600 mb-2">Stars Comprehensive College,  Saw-Mill Ibadan| Graduated 2021</p>
-            <p className="text-gray-700">
-              Completed secondary school education in science department .
-            </p>
-          </div>
+          <Items
+            title="Bachelor of Engineering in Computer Engineering"
+            date="Afe Babalola University Ado-Ekiti | Expected Graduation: 2027"
+            description="Studying computer engineering with a focus on software development, algorithms, and system design."
+          />
+          <Items
+            title="High School"
+            date="Stars Comprehensive College, Saw-Mill Ibadan | Graduated 2021"
+            description="Completed secondary school education in science department."
+          />
         </div>
       </section>
 
