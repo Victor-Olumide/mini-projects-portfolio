@@ -1,4 +1,3 @@
-// import React, { useState } from 'react'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
@@ -22,11 +21,15 @@ export default function Contact() {
 
       <div className="max-w-3xl mx-auto bg-white p-10">
         <form
-          action="mailto:oyewumivictor7@gmail.com"
-          method="post"
-          encType="text/plain"
+          action="https://api.web3forms.com/submit"
+          method="POST"
           className="max-w-md mx-auto mb-8"
         >
+          <input
+            type="hidden"
+            name="access_key"
+            value="2e15357e-0433-4f56-934e-5418732608d0"
+          />
           <input type="hidden" name="subject" value="Contact Form Submission" />
           <div className="mb-4">
             <input
