@@ -9,7 +9,7 @@ export default function DesktopNavbar() {
 
   return (
     <div className="mt-0 flex items-start">
-      <ul className="hidden md:flex fixed w-full z-10 justify-center text-white text-sm font-semibold bg-[#182239] px-16 py-4 gap-8">
+      <ul className="hidden md:flex fixed w-full z-10 justify-center text-white text-sm font-semibold bg-[#182239] px-16 py-4 gap-10">
         {desktop}
       </ul>
     </div>

@@ -26,12 +26,12 @@ export default function HomeCard({src,name, title, desc}) {
 
           <div className="flex flex-row md:flex-col items-start mt-6">
             <Link href="/projects">
-              <button className="bg-gray-800 hover:bg-gray-700 md:w-[200px] flex-1 p-2 text-white">
+              <button className="bg-gray-800 hover:bg-gray-700 md:w-[200px] cursor-pointer flex-1 p-2 text-white">
                 View My Projects
               </button>
             </Link>
             <a href="/victor_olumide_resume.pdf" download>
-              <button className="border md:w-[200px] border-amber-500 hover:border-gray-800 flex-1 p-2">
+              <button className="border md:w-[200px] border-amber-500 cursor-pointer hover:border-gray-800 flex-1 p-2">
                 Download Resume
               </button>
             </a>

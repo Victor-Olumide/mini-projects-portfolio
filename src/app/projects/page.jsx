@@ -1,18 +1,15 @@
 import ProjectCard from "@/app/components/ProjectCard";
-import Link from "next/link";
-import React from "react";
 import { jsProjects, reactProjects } from "../projectsData";
+import HeroText from "../components/HeroText";
 
 export default function Projects() {
   return (
     <main className="p-4 flex flex-col justify-center items-center">
-      <section className="text-center mt-[52px]">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Explore My Professionally Curated Creative Projects</h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Dive into a collection of my mini-projects built with JavaScript and React. Each project showcases different skills and concepts, from simple utilities to interactive game.
-        </p>
-      </section>
-      
+      <HeroText
+        title="Explore My Professionally Curated Creative Projects"
+        description="Dive into a collection of my mini-projects built with JavaScript and React. Each project showcases different skills and concepts, from simple utilities to interactive game."
+      />
+
       <section className=" w-full max-w-6xl mt-15">
         <h2 className="text-2xl font-bold mb-4 text-center">
           JavaScript Projects

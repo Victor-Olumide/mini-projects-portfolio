@@ -1,23 +1,13 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import HeroText from "../components/HeroText";
+import SocialLinks from "../components/SocialLinks";
 
 export default function Contact() {
   return (
-    <main className="min-h-screen p-4">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-8">Contact Me</h1>
-
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-            Say Hi! and tell me what you think
-          </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            I'm always open to new opportunities, collaborations, or just a
-            friendly chat. Whether you have a project in mind, need advice on
-            development, or want to share feedback, feel free to reach out.
-            Let's connect and build something amazing together!
-          </p>
-        </div>
-      </div>
+    <main className="min-h-screen relative p-4">
+      <HeroText
+        title="Say Hi! and tell me what you think"
+        description="I'm always open to new opportunities, collaborations, or just a friendly chat. Whether you have a project in mind, need advice on development, or want to share feedback, feel free to reach out. Let's connect and build something amazing together!"
+      />
 
       <div className="max-w-3xl mx-auto bg-white p-10">
         <form
@@ -63,7 +53,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="bg-blue-900 text-white px-6 py-3 rounded-3xl hover:bg-blue-800 transition-colors w-full"
+            className="bg-blue-900 text-white px-6 py-3 rounded-3xl cursor-pointer hover:bg-blue-800 transition-colors w-full"
           >
             Send Message
           </button>
@@ -71,24 +61,7 @@ export default function Contact() {
 
         <div className="text-center">
           <h2 className="text-xl font-semibold mb-4">Connect with me</h2>
-          <div className="flex justify-center gap-6">
-            <a
-              href="https://linkedin.com/in/victor-olumide"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 transition-colors"
-            >
-              <FaLinkedin size={50} />
-            </a>
-            <a
-              href="https://github.com/Victor-Olumide"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-800 hover:text-gray-600 transition-colors"
-            >
-              <FaGithub size={50} />
-            </a>
-          </div>
+          <SocialLinks />
         </div>
       </div>
     </main>
